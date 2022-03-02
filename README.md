@@ -5,4 +5,4 @@ It should allow you too:
 - Track hit points
 - Simulate dice rolls
 - Easily add creatures
-- Not lose your mind from tracking all the foes and players
+- Sort your creatures
