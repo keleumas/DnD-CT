@@ -14,387 +14,336 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="DeleteCreatureButton">
+   <widget class="QGroupBox" name="creatureInput">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>450</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Delete</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="ChosenCreature">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>171</width>
-      <height>301</height>
+      <x>220</x>
+      <y>30</y>
+      <width>360</width>
+      <height>80</height>
      </rect>
     </property>
     <property name="title">
-     <string>Chosen creature</string>
+     <string>Creature input</string>
     </property>
-    <widget class="QWidget" name="layoutWidget_2">
+    <widget class="QLabel" name="labelName">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>20</y>
-       <width>171</width>
-       <height>187</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="OtherCreature">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_9">
-        <item>
-         <widget class="QLabel" name="Name_2">
-          <property name="text">
-           <string>Name</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="chosenName">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_10">
-        <item>
-         <widget class="QLabel" name="HP_2">
-          <property name="text">
-           <string>HP</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="chosenHP">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_11">
-        <item>
-         <widget class="QLabel" name="AC_2">
-          <property name="text">
-           <string>AC</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="chosenAC">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_12">
-        <item>
-         <widget class="QLabel" name="INI_2">
-          <property name="text">
-           <string>INI</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="chosenINI">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QComboBox" name="creatureChoose">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>220</y>
-       <width>171</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="currentIndex">
-      <number>-1</number>
-     </property>
-     <property name="maxVisibleItems">
-      <number>64</number>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="DisplayCreatureButton">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>260</y>
-       <width>91</width>
-       <height>21</height>
+       <width>60</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Display</string>
+      <string>Name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelHp">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HP</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="inputHp">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>40</y>
+       <width>60</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>9999</number>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="inputAc">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>40</y>
+       <width>40</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="inputIni">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>40</y>
+       <width>40</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelAc">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelIni">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INI</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="inputName">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>35</y>
+       <width>180</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
+   <widget class="QGroupBox" name="creatureDisplay">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>10</y>
-      <width>171</width>
-      <height>251</height>
+      <x>60</x>
+      <y>30</y>
+      <width>140</width>
+      <height>280</height>
      </rect>
     </property>
     <property name="title">
-     <string>Current Creature</string>
+     <string>Creature</string>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QLabel" name="labelCreatureName">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>20</y>
-       <width>171</width>
-       <height>187</height>
+       <width>60</width>
+       <height>20</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="CurrentCreature">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_8">
-        <item>
-         <widget class="QLabel" name="Name">
-          <property name="text">
-           <string>Name</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="currentName">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
-        <item>
-         <widget class="QLabel" name="HP">
-          <property name="text">
-           <string>HP</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="currentHP">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
-         <widget class="QLabel" name="AC">
-          <property name="text">
-           <string>AC</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="currentAC">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <widget class="QLabel" name="INI">
-          <property name="text">
-           <string>INI</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="currentINI">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
+     <property name="text">
+      <string>Name</string>
+     </property>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>10</y>
-      <width>331</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Add Creature</string>
-    </property>
-    <widget class="QWidget" name="">
+    <widget class="QTextEdit" name="displayName">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>20</y>
-       <width>321</width>
-       <height>52</height>
+       <y>40</y>
+       <width>140</width>
+       <height>26</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="DataInsert">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Name</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="insertName"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>HP</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="HPspinBox">
-          <property name="minimum">
-           <number>1</number>
-          </property>
-          <property name="maximum">
-           <number>9999</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>AC</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="ACspinBox">
-          <property name="minimum">
-           <number>1</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
-        <item>
-         <widget class="QLabel" name="label_4">
-          <property name="text">
-           <string>INI</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="INIspinBox">
-          <property name="minimum">
-           <number>1</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
     </widget>
-    <widget class="QPushButton" name="AddCreatureButton">
+    <widget class="QLabel" name="labelCreatureHp">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>80</y>
-       <width>81</width>
-       <height>25</height>
+       <width>60</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Add</string>
+      <string>HP</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="displayHP">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="displayAc">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCreatureAc">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCreatureIni">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INI</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="displayIni">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="StartButton">
+   <widget class="QGroupBox" name="currentDisplay_2">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>420</y>
-      <width>71</width>
-      <height>61</height>
+      <x>600</x>
+      <y>30</y>
+      <width>140</width>
+      <height>280</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Start</string>
+    <property name="title">
+     <string>Creature</string>
     </property>
+    <widget class="QLabel" name="labelCurrentName">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="currentName">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCurrentHp">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HP</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="currentHp">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="currentAc">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCurrentAc">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelCurrentIni">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INI</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="currentIni">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>140</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
-   <widget class="QPushButton" name="EndButton">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>420</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>End</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
