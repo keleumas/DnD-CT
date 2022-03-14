@@ -3,20 +3,30 @@
 
 #include <QObject>
 
-class creature : public QObject
+
+class Creature : public QObject
 {
     Q_OBJECT
 
     QString name;
-    unsigned int hp;
-    unsigned int ac;
-    unsigned int ini;
+    int hp;
+    int ac;
+    int ini;
+    static int objCount;
 
 public:
-    explicit creature(QObject *parent = nullptr, QString name="NaC" ,int hp=1,int ac=1,int ini=1);
+
+
+    explicit Creature(QObject *parent = nullptr, QString name="NaC" ,int hp=1,int ac=1,int ini=1);
+    ~Creature();
 
 signals:
 
 };
+
+//Functions for logic
+
+void sendDataToCreatureConstructor (QString name ,int hp,int ac,int ini);
+
 
 #endif // CREATURE_H
